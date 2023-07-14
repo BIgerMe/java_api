@@ -1,0 +1,29 @@
+spring:
+  devtools:
+    restart:
+      enabled: true
+  datasource:
+#    url: jdbc:mysql://localhost:3306/xm?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+    url: jdbc:mysql://172.29.241.117:3306/xm?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+    username: zxm
+    password: password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      maxLifeTime: 600000
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  data:
+    mongodb:
+      uri: mongodb://zxm:password@172.29.241.117:27017/xm
+server:
+  port: 8080
+  servlet:
+    context-path: /
+  tomcat:
+    threads:
+      max: 200
+test:
+  id: 12
+  test: id3
