@@ -1,5 +1,7 @@
 package web.entity;
 
+import com.google.gson.JsonElement;
+
 import javax.persistence.*;
 import java.util.Objects;
 

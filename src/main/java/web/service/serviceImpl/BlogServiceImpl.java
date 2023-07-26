@@ -12,7 +12,6 @@ import web.repository.blog.BlogInfoRepository;
 import web.service.BlogService;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.swing.*;
 import javax.transaction.Transactional;
 import java.util.*;
 

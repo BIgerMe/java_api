@@ -7,4 +7,6 @@ import web.entity.blog.TBlogContent;
 @Repository
 public interface BlogContentRepository extends JpaRepository<TBlogContent,Long> {
     TBlogContent findFirstByBlogId(int blog_id);
+
+
 }

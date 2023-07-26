@@ -19,7 +19,7 @@ public class GlobalCorsConfig {
             @Override
             public void addInterceptors(InterceptorRegistry registry) {
                 registry.addInterceptor(getLoginInterceptor())
-                        .addPathPatterns("/blog/*")
+                        .addPathPatterns("/blog/*","/room/*")
                         .excludePathPatterns("/user/login");
             }
 
