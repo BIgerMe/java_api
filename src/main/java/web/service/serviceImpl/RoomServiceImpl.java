@@ -82,8 +82,11 @@ public class RoomServiceImpl implements RoomService {
     public void contentAdd(JsonObject jsonObject,TUser user){
         String room = jsonObject.get("room").getAsString();
         String content = jsonObject.get("content").getAsString();
+        Integer type = jsonObject.get("type").getAsInt();
 
         TRoomContent roomContent = new TRoomContent();
+        roomContent.setType(type);
+        roomContent.setStatus(0);
         roomContent.setRoomId(Integer.valueOf(room));
         roomContent.setContent(content);
         roomContent.setUserId(user.getId());

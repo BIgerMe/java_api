@@ -26,7 +26,12 @@ public class TRoomContent {
     @Basic
     @Column(name = "create_at")
     private Timestamp createAt;
-
+    @Basic
+    @Column(name = "type")
+    private Integer type;
+    @Basic
+    @Column(name = "status")
+    private Integer status;
     public int getId() {
         return id;
     }
@@ -73,6 +78,22 @@ public class TRoomContent {
 
     public void setNickname(String nickname) {
         this.nickname = nickname;
+    }
+
+    public Integer getType() {
+        return type;
+    }
+
+    public void setType(Integer type) {
+        this.type = type;
+    }
+
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
     }
 
     @Override
